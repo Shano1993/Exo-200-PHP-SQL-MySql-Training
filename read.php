@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/basics.css">
-    <title>Document</title>
+    <title>Randonnées, read</title>
 </head>
 <body>
     <h1>Liste des randonnées</h1>

@@ -33,7 +33,7 @@ h1 {
 }
 
 body {
-  background: #FFBB3F;
+  background: rgba(255, 187, 63, 0.75);
   font-family: Calibri, sans-serif;
   color: #341401;
 }
@@ -56,6 +56,11 @@ td {
   padding: 1rem;
   font-size: 2rem;
   border: 0.1rem solid black;
+}
+
+#id, #number {
+  width: 2rem;
+  text-align: center;
 }
 
 .create {
