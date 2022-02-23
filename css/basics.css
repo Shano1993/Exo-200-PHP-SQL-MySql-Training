@@ -1,22 +1,76 @@
-label, select, input{
-  width: 150px;
-  display: inline-block;
-  margin: 5px 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+html {
+  font-size: 62.5%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid black;
+  width: 30%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 2rem;
+}
+
+label, select, input {
+  width: 25rem;
+  display: inline-block;
+  margin: 5px 0;
+  padding: 0.8rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 3rem;
+  font-size: 3rem;
+  border-bottom: 0.2rem solid black;
+}
+
+body {
   background: #FFBB3F;
   font-family: Calibri, sans-serif;
   color: #341401;
 }
 
+table {
+  width: 80%;
+  margin: 2rem auto;
+}
+
 th {
   text-align: left;
-  padding: 10px;
-  font-size: 20px;
+  padding: 1rem;
+  font-size: 2rem;
+  border: 0.1rem solid black;
+  width: 30%;
+  background-color: white;
 }
 
 td {
-  padding: 10px;
+  padding: 1rem;
+  font-size: 2rem;
+  border: 0.1rem solid black;
+}
+
+.create {
+  margin-left: 5rem;
+  text-decoration-line: none;
+  font-size: 2rem;
+  border: 0.1rem solid black;
+  padding: 0.5rem;
+  color: black;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.create:hover {
+  background-color: black;
+  color: white;
 }
 
