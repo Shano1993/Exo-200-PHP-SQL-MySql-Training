@@ -1,7 +1,5 @@
 <?php
-
 require __DIR__ . '/utils.php';
-
 if (issetPostParams('name', 'difficulty', 'distance', 'duration', 'height_difference')) {
     try {
         $server = 'localhost';

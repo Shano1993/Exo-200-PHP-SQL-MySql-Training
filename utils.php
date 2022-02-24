@@ -26,7 +26,7 @@ function readTraining($pdo) {
                 </tr>
                 <tr>
                     <td id="id"><?= $hinkin['id'] ?></td>
-                    <td><a href="/update.php"><?= $hinkin['name'] ?></a></td>
+                    <td><a href="/update.php?update=<?= $hinkin['id'] ?>"><?= $hinkin['name'] ?></a></td>
                     <td><?= $hinkin['difficulty'] ?></td>
                     <td><?= $hinkin['distance'] . "km" ?></td>
                     <td><?= $hinkin['duration'] ?></td>
@@ -38,6 +38,7 @@ function readTraining($pdo) {
     }
 }
 
+// Fonction pour supprimer une randonnée
 function deleteTraining($id, $pdo) {
     $sql = "DELETE FROM hiking WHERE id = $id";
     if ($pdo->exec($sql) !== false) {

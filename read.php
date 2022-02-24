@@ -15,9 +15,7 @@
 </html>
 
 <?php
-
 require __DIR__ . '/utils.php';
-
 try {
     $server = 'localhost';
     $db = 'training';
