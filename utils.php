@@ -31,7 +31,7 @@ function readTraining($pdo) {
                     <td><?= $hinkin['distance'] . "km" ?></td>
                     <td><?= $hinkin['duration'] ?></td>
                     <td><?= $hinkin['height_difference'] . "m" ?></td>
-                    <td><a href="/delete.php">Supprimer</a></td>
+                    <td><a href="/delete.php?delete=<?= $hinkin['id']?>">Supprimer</a></td>
                 </tr>
             </table> <?php
         }
@@ -44,3 +44,7 @@ function deleteTraining($id, $pdo) {
         header('Location: /read.php');
     }
 }
+
+
+
+
