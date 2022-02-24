@@ -10,6 +10,10 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
+    if (isset($_POST['maj'])) {
+        updateTraining($_GET['update'], $_POST['name'], $_POST['difficulty'], $_POST['distance'], $_POST['duration'], $_POST['height_difference'], $pdo); ?>
+        <div class="message">Modification réussie !</div> <?php
+    }
 }
 
 catch (Exception $exception) {
@@ -42,7 +46,7 @@ catch (Exception $exception) {
         <input type="number" name="distance" placeholder="Distance">
         <input type="text" name="duration" placeholder="Durée de la randonnée">
         <input type="number" name="height_difference" placeholder="Dénivelé">
-        <input type="submit" value="Mettre à jour">
+        <input type="submit" name="maj" value="Mettre à jour">
     </form>
 </body>
 </html>

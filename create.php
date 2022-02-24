@@ -1,5 +1,9 @@
 <?php
  require __DIR__ .'/bdd.php';
+
+ if (isset($_POST['submit'])) { ?>
+     <div class="message">La randonnée a bien été créée !</div> <?php
+ }
 ?>
 
 <!doctype html>
@@ -28,7 +32,7 @@
         <input type="number" name="distance" placeholder="Distance">
         <input type="text" name="duration" placeholder="Durée de la randonnée">
         <input type="number" name="height_difference" placeholder="Dénivelé">
-        <input type="submit" value="Envoyer">
+        <input type="submit" name="submit" value="Envoyer">
     </form>
 </body>
 </html>

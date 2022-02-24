@@ -79,3 +79,10 @@ td {
   color: white;
 }
 
+.message {
+  background-color: green;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
